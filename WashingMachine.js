@@ -34,7 +34,26 @@ function WashingMachine() {
 
 
 
+<section id="about2">
+<div className='container'>
+<div className='row'>
+<div className='col-lg-4 col-md-4 col-sm-12 col-12'>
 
+<h2>BEST WASHING MACHINE SERVICE IN TAMILNADU</h2>
+ <ul>
+ <li>Best Service</li>
+ <li>24X7 Service</li>
+ <li>High Quality Service</li>
+ <li>Warantty & Guarantee Service</li>
+ <li>High Quality Original Spares</li>
+ </ul>
+ 
+ </div>
+ 
+ 
+ </div>
+ </div>
+ </section>
 
  
       {/* About Section */}
