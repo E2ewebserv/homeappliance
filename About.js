@@ -12,7 +12,7 @@ function About() {
       <section id="hero">
         <div className='containr'>
           <div className='row'>
-        <h1>Know More Us!</h1> <br/>
+        {/* <h1>Know More Us!</h1> <br/> */}
     
         
         </div>
