@@ -53,7 +53,7 @@ function WashingMachine() {
  
  </div>
  </div>
- </section>
+ </section> 
 
  
       {/* About Section */}
