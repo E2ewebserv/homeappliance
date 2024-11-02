@@ -1,0 +1,409 @@
+
+/* Info Section Styling */
+.info {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive Styling */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .info h1 {
+        font-size: 2rem;
+    }
+
+    .info p {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+    .info h1 {
+        font-size: 1.8rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+        padding: 0 5px;
+    }
+}
+
+
+/* Service Section Styling */
+#our-services {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+#our-services h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.service-card .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.service-card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styling */
+
+/* Tablet and Smaller Devices */
+@media (max-width: 992px) {
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .service-card p {
+        font-size: 0.95rem;
+    }
+    
+    .service-icon {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+    #our-services h2 {
+        font-size: 2rem;
+    }
+    
+    .service-card {
+        padding: 20px;
+    }
+    
+    .service-icon {
+        font-size: 2rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .service-card p {
+        font-size: 0.9rem;
+    }
+    
+    .service-card .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+
+
+/* AC Services Section Styling */
+.ac-services {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+}
+
+.ac-services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.ac-services .service-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Set a uniform size for the images */
+.ac-services .service-item img {
+    width: 100%; /* Full width of the container */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures aspect ratio is maintained */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ac-services .service-item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ac-services h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #007bff;
+}
+
+.ac-services p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Responsive Styling */
+
+/* Tablet and Smaller Devices */
+@media (max-width: 992px) {
+    .ac-services h2 {
+        font-size: 2rem;
+    }
+
+    .ac-services h3 {
+        font-size: 1.3rem;
+    }
+
+    .ac-services p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+    .ac-services {
+        padding: 30px 15px;
+    }
+
+    .ac-services h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .ac-services .service-item {
+        margin-bottom: 20px;
+    }
+
+    .ac-services h3 {
+        font-size: 1.2rem;
+    }
+
+    .ac-services p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* AC Issues Section Styling */
+.ac-issues {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.ac-issues h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.ac-issues .issue-item {
+    margin-bottom: 30px;
+}
+
+/* Set a uniform size for the images */
+.ac-issues .issue-image {
+    width: 100%; /* Full width of the container */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures aspect ratio is maintained */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ac-issues .issue-item:hover .issue-image {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ac-issues h3 {
+    font-size: 1.8rem;
+    margin-top: 15px;
+    color: #007bff;
+}
+
+.ac-issues p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.ac-issues ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Responsive Styling */
+
+/* Tablet and Smaller Devices */
+@media (max-width: 992px) {
+    .ac-issues h2 {
+        font-size: 2rem;
+    }
+
+    .ac-issues h3 {
+        font-size: 1.5rem;
+    }
+
+    .ac-issues p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+    .ac-issues {
+        padding: 30px 15px;
+    }
+
+    .ac-issues h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .ac-issues h3 {
+        font-size: 1.2rem;
+    }
+
+    .ac-issues p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Milestones Section Styling */
+.milestones {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background color for contrast */
+    text-align: center; /* Center text alignment */
+}
+
+.milestones h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.milestone-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center align items */
+}
+
+.milestone {
+    background-color: #fff; /* White background for each milestone */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    flex: 0 1 calc(25% - 30px); /* Flexible width: 25% minus margin */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.counter {
+    font-size: 2rem; /* Larger font size for numbers */
+    font-weight: bold; /* Bold text */
+    color: #007bff; /* Primary color */
+}
+
+.label {
+    font-size: 1rem; /* Smaller font size for labels */
+    color: #666;
+}
+
+/* Hover Effects */
+.milestone:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Responsive Styling */
+
+/* Tablet Devices */
+@media (max-width: 992px) {
+    .milestone {
+        flex: 0 1 calc(50% - 30px); /* 2 items per row */
+    }
+
+    .milestones h2 {
+        font-size: 2rem; /* Slightly smaller heading */
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+    .milestone {
+        flex: 0 1 calc(100% - 30px); /* 1 item per row */
+    }
+
+    .milestones {
+        padding: 30px 15px; /* Reduce padding */
+    }
+
+    .milestones h2 {
+        font-size: 1.8rem; /* Further reduced heading size */
+    }
+
+    .counter {
+        font-size: 1.5rem; /* Smaller counter on mobile */
+    }
+}
+

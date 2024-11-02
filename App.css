@@ -1,0 +1,155 @@
+/* Global font and style reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  padding-top: 80px; /* To prevent overlap with fixed navbar */
+  background-color: #f7f9fc; /* Light background for overall design */
+  color: #333; /* Global text color */
+  font-size: 16px;
+  line-height: 1.6;
+}
+ 
+/* Navbar fixed at the top */
+.navbar {
+  position: fixed !important; /* Makes the navbar fixed at the top */
+  top: 0;          /* Sticks the navbar to the top of the screen */
+  width: 100%;     /* Ensures the navbar spans the entire width */
+  z-index: 1000;   /* Ensures it stays above other elements */
+  background-color: #343a40; /* Navbar background color */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for effects */
+}
+ 
+
+/* Responsive Navbar styles */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  background-color: #343a40;
+  border-radius: 60px;
+   
+
+}
+
+.dropdown-menu .dropdown-item {
+  color: #c43535;
+  padding: auto;
+  border-radius: 80px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #287acc;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+#footer {
+  background-color: #343a40; /* Dark background */
+  padding: 40px 0; /* Padding for top and bottom */
+  color: #ffffff; /* Light text color */
+}
+
+#footer h6 {
+  font-size: 1.2rem; /* Font size for headings */
+  margin-bottom: 20px; /* Space below headings */
+  font-weight: bold; /* Bold font weight */
+  letter-spacing: 1px; /* Spacing between letters */
+}
+
+#footer p {
+  font-size: 0.9rem; /* Font size for paragraphs */
+  line-height: 1.5; /* Line height for readability */
+}
+
+#footer .text-light {
+  color: #d3d3d3; /* Lighter text color for links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+#footer .text-light:hover {
+  color: #ffffff; /* Change color on hover */
+}
+
+#footer .container {
+  max-width: 1200px; /* Maximum width for the container */
+  margin: auto; /* Center the container */
+}
+
+#footer .row {
+  margin-bottom: 30px; /* Space below rows */
+}
+
+#footer hr {
+  margin: 10px 0; /* Margin for horizontal rules */
+  border: none; /* Remove default border */
+  background-color: #ffffff; /* White color for horizontal rule */
+  height: 2px; /* Height of the rule */
+}
+
+#footer .col-md-3, #footer .col-md-2, #footer .col-md-4 {
+  padding: 0 15px; /* Padding for columns */
+}
+
+.text-center {
+  text-align: center; /* Center align text */
+}
+
+.text-lg-start {
+  text-align: left; /* Align text to left on larger screens */
+}
+
+@media (max-width: 768px) {
+  #footer {
+      padding: 20px 0; /* Reduce padding on small screens */
+  }
+
+  #footer h6 {
+      font-size: 1rem; /* Smaller font size for headings */
+  }
+
+  #footer p {
+      font-size: 0.85rem; /* Smaller font size for paragraphs */
+      
+    
+    
+    }
+}
