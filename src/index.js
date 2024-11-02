@@ -6,6 +6,8 @@ import App from './App';
 import './Service/WashingMachine.css';
 import './Service/About.css';
 import './Service/AcService.css';
+import './Service/FridgeService.css';
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'font-awesome/css/font-awesome.min.css';
 
