@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    font-family: 'Poppins', sans-serif; 
+}#hero {
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Parallax effect for larger screens */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: white; /* Text color */
+    position: relative; /* Position for pseudo-elements */
+    padding: 0 15px; /* Add some padding for smaller screens */
+}
+
+.hero-content {
+    text-align: center; /* Center align the text */
+    z-index: 2; /* Ensure the text appears above the background image */
+    padding: 20px; /* Add some padding */
+    opacity: 0; /* Start with hidden content */
+    animation: fadeIn 1s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateY(20px); /* Move down slightly */
+    }
+    to {
+        opacity: 1; /* End visible */
+        transform: translateY(0); /* Return to original position */
+    }
+}
+
+#hero h1 {
+    font-size: 3rem; /* Large font size for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+    animation: slideIn 0.8s forwards; /* Slide-in animation */
+    opacity: 0; /* Start hidden */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateX(-50px); /* Slide in from the left */
+    }
+    to {
+        opacity: 1; /* End visible */
+        transform: translateX(0); /* Return to original position */
+    }
+}
+
+#hero p {
+    font-size: 1.5rem; /* Font size for the paragraph */
+    margin-bottom: 20px; /* Space below the paragraph */
+    animation: fadeIn 1s forwards 0.3s; /* Fade-in animation with delay */
+    opacity: 0; /* Start hidden */
+    letter-spacing: 1px !important;
+}
+
+.call-button {
+    background-color: #ff4757; /* Call button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem; /* Font size for the button */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    animation: bounceIn 0.8s forwards 0.6s; /* Bounce-in animation */
+    opacity: 0; /* Start hidden */
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateY(30px); /* Move down slightly */
+    }
+    to {
+        opacity: 1; /* End visible */
+        transform: translateY(0); /* Return to original position */
+    }
+}
+
+.call-button:hover {
+    background-color: #e84118; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly grow the button */
+}
+
+/* Mobile View Specific Adjustments */
+@media (max-width: 768px) {
+    #hero {
+        height: 80vh; /* Reduce the hero height for smaller screens */
+        background-attachment: scroll; /* Avoid fixed background on mobile */
+        padding: 0 10px;
+    }
+
+    #hero h1 {
+        font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+
+    #hero p {
+        font-size: 1.2rem; /* Smaller paragraph font size */
+    }
+
+    .call-button {
+        font-size: 1rem; /* Smaller button font size */
+    }
+}
+
+@media (max-width: 576px) {
+    #hero {
+        height: 70vh; /* Reduce height further for very small screens */
+        padding: 0 5px; /* Add padding for small mobile screens */
+        background-position: top; /* Adjust image focus for small screens */
+    }
+
+    #hero h1 {
+        font-size: 1.5rem; /* Smaller font size on small devices */
+    }
+
+    #hero p {
+        font-size: 1rem; /* Smaller paragraph font size */
+    }
+
+    .call-button {
+        padding: 8px 16px; /* Smaller padding for the button */
+    }
+}
+
+#about button {
+  padding: 10px 20px;
+  background-color: tomato;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  border: none;
+}
+
+#about button:hover {
+  background-color: coral;
+}
+
+#desc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#desc img {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px 20px 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Issue Section */
+#issue {
+  background-color: #ffffff !important;
+  padding: 50px 0;
+}
+
+.issue-box {
+  background-color: #ffffff !important;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0.5rem;
+}
+
+.issue-icon {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.issue-box h3, .issue-box p {
+  margin: 10px 0;
+}
+
+h3 {
+  color: #343a40;
+}
+
+p {
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  #issue .row {
+    text-align: center;
+  }
+}
+
+/* Why Choose Us Section */
+#why-choose {
+  padding: 60px 0;
+  background-color: #ffffff !important;
+}
+
+.why-item {
+  background-color: #fff !important;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Removed scaling effect */
+  /* transition: all 0.3s ease; */
+}
+
+.why-item:hover {
+  /* Removed scaling effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.why-item i {
+  font-size: 40px;
+  color: #ff9900;
+  margin-bottom: 20px;
+}
+
+.why-item:hover i {
+  color: #b94806;
+}
+
+.why-item h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.why-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Timing Section */
+#timing {
+  padding: 60px 0;
+  background-color: #ffffff !important;
+}
+
+.timing-item {
+  background-color: #fff !important;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Removed scaling effect */
+  /* transition: all 0.3s ease; */
+}
+
+.timing-item:hover {
+  /* Removed scaling effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.timing-item i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.timing-item:hover i {
+  color: #28a745;
+}
+
+.timing-item h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.timing-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Colored Icons for each day of the week */
+.timing-item:nth-child(1) i { color: #007bff; } /* Monday */
+.timing-item:nth-child(2) i { color: #f39c12; } /* Tuesday */
+.timing-item:nth-child(3) i { color: #e74c3c; } /* Wednesday */
+.timing-item:nth-child(4) i { color: #3498db; } /* Thursday */
+.timing-item:nth-child(5) i { color: #2ecc71; } /* Friday */
+.timing-item:nth-child(6) i { color: #9b59b6; } /* Saturday */
+.timing-item.sunday i { color: #e74c3c; } /* Sunday (Red for Closed) */
+
+@media (max-width: 768px) {
+  .timing-item {
+    margin-bottom: 20px;
+  }
+}
