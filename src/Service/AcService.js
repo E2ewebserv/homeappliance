@@ -2,21 +2,16 @@ import React, { useEffect } from 'react';
 import './AcService.css';
 
 
-import AC_Cleaning from '../images/AC Cleaning.jpg'; 
-import Gas_Refill from '../images/Gas Refill.jpeg'; 
-import Fan_Motor_Replacement from '../images/Fan Motor Replacement.webp'; 
-import Thermostat_Repair from '../images/Thermostat Repair.jpg'; 
-import Leak_Repair from '../images/Leak Repair.jpg'; 
+import AC_Cleaning from './images/AC Cleaning.jpg'; 
+import Gas_Refill from './images/Gas Refill.jpeg'; 
+import Fan_Motor_Replacement from './images/Fan Motor Replacement.webp'; 
+import Thermostat_Repair from './images/Thermostat Repair.jpg'; 
+import Leak_Repair from './images/Leak Repair.jpg'; 
+import ac from './images/ac.jpg'; 
+import Strange_Noises from './images/Strange Noises.jpg'; 
+import Water_Leakage_Repair from './images/Water Leakage Repair.jpg'; 
 
-import ac from '../images/ac.jpg'; 
-import Strange_Noises from '../images/Strange Noises.jpg'; 
-import Water_Leakage_Repair from '../images/Water Leakage Repair.jpg'; 
-
-
-
-
-
-import ACHERO from "../images/achero.jpg"; // New image for AC services
+import ACHERO from "./images/achero.jpg"; // New image for AC services
 
 function AcServices() {
   useEffect(() => {

@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 
 
 
-import WASHERHERO from "../images/washerhero.jpg";
+import WASHERHERO from "./images/washerhero.jpg";
 
 
 function WashingMachine() {
