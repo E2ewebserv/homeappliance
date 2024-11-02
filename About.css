@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box
+}
+body{
+    background-color: rgb(12, 12, 49);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#hero {
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Parallax effect for larger screens */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: white; /* Text color */
+    position: relative; /* Position for pseudo-elements */
+    padding: 0 15px; /* Add some padding for smaller screens */
+}
+
+.hero-content {
+    text-align: center; /* Center align the text */
+    z-index: 2; /* Ensure the text appears above the background image */
+    padding: 20px; /* Add some padding */
+    opacity: 0; /* Start with hidden content */
+    animation: fadeIn 1s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateY(20px); /* Move down slightly */
+    }
+    to {
+        opacity: 1; /* End visible */
+        transform: translateY(0); /* Return to original position */
+    }
+}
+
+#hero h1 {
+    font-size: 3rem; /* Large font size for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+    animation: slideIn 0.8s forwards; /* Slide-in animation */
+    opacity: 0; /* Start hidden */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateX(-50px); /* Slide in from the left */
+    }
+    to {
+        opacity: 1; /* End visible */
+        transform: translateX(0); /* Return to original position */
+    }
+}
+
+#hero p {
+    font-size: 1.5rem; /* Font size for the paragraph */
+    margin-bottom: 20px; /* Space below the paragraph */
+    animation: fadeIn 1s forwards 0.3s; /* Fade-in animation with delay */
+    opacity: 0; /* Start hidden */
+    letter-spacing: 1px !important;
+}
+
+.call-button {
+    background-color: #ff4757; /* Call button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem; /* Font size for the button */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    animation: bounceIn 0.8s forwards 0.6s; /* Bounce-in animation */
+    opacity: 0; /* Start hidden */
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateY(30px); /* Move down slightly */
+    }
+    to {
+        opacity: 1; /* End visible */
+        transform: translateY(0); /* Return to original position */
+    }
+}
+
+.call-button:hover {
+    background-color: #e84118; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly grow the button */
+}
+
+/* Mobile View Specific Adjustments */
+@media (max-width: 768px) {
+    #hero {
+        height: 80vh; /* Reduce the hero height for smaller screens */
+        background-attachment: scroll; /* Avoid fixed background on mobile */
+        padding: 0 10px;
+    }
+
+    #hero h1 {
+        font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+
+    #hero p {
+        font-size: 1.2rem; /* Smaller paragraph font size */
+    }
+
+    .call-button {
+        font-size: 1rem; /* Smaller button font size */
+    }
+}
+
+@media (max-width: 576px) {
+    #hero {
+        height: 70vh; /* Reduce height further for very small screens */
+        padding: 0 5px; /* Add padding for small mobile screens */
+        background-position: top; /* Adjust image focus for small screens */
+    }
+
+    #hero h1 {
+        font-size: 1.5rem; /* Smaller font size on small devices */
+    }
+
+    #hero p {
+        font-size: 1rem; /* Smaller paragraph font size */
+    }
+
+    .call-button {
+        padding: 8px 16px; /* Smaller padding for the button */
+    }
+}
+/* About Section Styles */
+.about-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .about-description {
+      font-size: 1rem;
+    }
+    
+    .about-btn {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .about-title {
+      font-size: 1.8rem;
+    }
+  
+    .about-description {
+      font-size: 0.9rem;
+    }
+  
+    .about-btn {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  }
+  /* General Styles */
+.about-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .about-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .about-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0056b3;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .about-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-list li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .about-list li strong {
+    color: #0056b3;
+  }
+  
+  .about-btn {
+    margin-top: 30px;
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-btn:hover {
+    background-color: #004494;
+    text-decoration: none;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 28px;
+    }
+  
+    .about-description {
+      font-size: 14px;
+    }
+  
+    .about-subtitle {
+      font-size: 20px;
+    }
+  
+    .about-btn {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-title {
+      font-size: 24px;
+    }
+  
+    .about-description {
+      font-size: 12px;
+    }
+  
+    .about-subtitle {
+      font-size: 18px;
+    }
+  
+    .about-btn {
+      width: 100%;
+      padding: 12px 20px;
+    }
+  }
+  

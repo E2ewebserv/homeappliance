@@ -1,0 +1,84 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.washing-machine-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header p {
+  font-size: 18px;
+  margin: 10px 0 0;
+}
+
+/* Services Section */
+.services {
+  padding: 40px 20px;
+}
+
+.services h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: #333;
+}
+
+.service-card {
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.service-card h3 {
+  margin: 15px 0 10px;
+  color: #4CAF50;
+  font-size: 22px;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 16px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
