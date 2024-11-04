@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './FridgeService.css';
+import './Fridge.css';
 
 import Fridge_Cleaning from './images/fridgehero.jpg'; 
 import Gas_Refill from './images/GasRefillFridge.jpg'; 
